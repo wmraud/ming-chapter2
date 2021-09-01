@@ -11,10 +11,15 @@ import com.ming.main.VO.MemberVO;
 public class MemberDAOImpl implements MemberDAO {
 	
 	@Inject SqlSession sql;
+	
 	// 회원가입
-
 	@Override
 	public void register(MemberVO vo) throws Exception {
 		sql.insert("memberMapper.register", vo);
+	}
+	
+	@Override
+	public void cuser(MemberVO vo) throws Exception {
+		sql.insert("memberMapper.cuser", vo);
 	}
 }

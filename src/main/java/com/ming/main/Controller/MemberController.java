@@ -36,4 +36,20 @@ public class MemberController {
 		
 		return null;
 	}
+	
+	// 회원가입 get
+		@RequestMapping(value = "member/cuser", method = RequestMethod.GET)
+		public void getCuser() throws Exception {
+			logger.info("get member/cuser");
+		}
+		
+	// 회원가입 post
+		@RequestMapping(value = "cuser", method = RequestMethod.POST)
+		public String postCuser(MemberVO vo) throws Exception {
+			logger.info("post cuser");
+			
+			service.cuser(vo);
+			
+		return "member/cuser";
+	}
 }

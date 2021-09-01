@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+#mainming01{
+    height: 40px;
+    width: 400px;
+    border : 2px solid #1b1b1b;
+    background-color: #ffffff;
+}#mainming01:focus {outline:none;}
+#mainming1{
+    width: 60px;
+    height: 45px;
+    border: 2px solid #1b1b1b;
+    outline: none;
+    color: #1b1b1b;
+}
+
+#ming2{
+  height: 26px;
+  width: 250px;
+  padding-top : 7px;
+  padding-bottom: 7px;
+  border : 2px solid #1b1b1b;
+  border-radius: 26px;
+  text-align : center;
+  outline: none;
+}
+
+
+#mainming22{
+    line-height: 30px;
+    border : 1px hidden #292525;
+    background-color : #ffffff;
+    color : #1b1b1b;
+    width: 90px;
+    height: 29px;
+    font-size: small;
+    float: right;
+    font-weight: bold;
+}
+#mainming22 {
+position: relative;
+}
+
+#mainming22::after {
+content: "";
+position: absolute;
+left: 50%;
+bottom: -3px;
+width: 60%;
+height: 1px;
+opacity: 0;
+background-color: #1b1b1b;
+transform: translate(-50%, 0);
+transition: all 0.3s ease-in-out;
+}
+
+#mainming22:hover::after {
+width: 100%;
+opacity: 1;
+}
+
+#mainming22:focus {outline:none;}
+
+#mainfoott{
+    background-color: white;
+    color: #1b1b1b;
+    font-size: small;
+    font-weight: bold;
+    text-align: right;
+    font-family: Pacifico, serif;
+}
+#mainmingreset{
+    border : 0px none #ffffff;
+    background-color : #ffffff;
+    font-size : 35px;
+    outline: none;
+    font-family: Pacifico, serif;
+}
+
+#mainmingreset {
+color: #1b1b1b;
+padding: 2 20px;
+text-align: center;
+line-height: 70px;
+cursor: pointer;
+position: relative;
+overflow: hidden;}
+#mainmingreset::before,
+#mainmingreset::after {
+position: absolute;
+content: '';
+left: 0;
+height: 2px;
+width: 100%;
+background-color: #1b1b1b;
+transition: transform 0.3s ease-in-out;
+border : none;
+}
+
+#mainmingreset::before {
+top: 0;
+transform: translateX(-100%);
+}
+
+#mainmingreset::after {
+bottom: 0;
+transform: translateX(100%);
+}
+
+#mainmingreset:hover::after,
+#mainmingreset:hover::before {
+transform: translateX(0);
+}
+
+/* 寃��깋 */
+
+.mainbutton-container-1 {
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 1px;
+  }
+  .mainbutton-container-1 button {
+    letter-spacing: 1px;
+    background: rgb(0, 0, 0, 85%);
+    width: 6%;
+    height: 2.8rem;
+    border: 1px solid;
+    border-radius: 8px;
+    /* background-image: url("/泥섏쓬遺��꽣/images/諛붾엺�쓽�굹�씪諛곌꼍.jpg"); */
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+    border: none;
+    color: white;
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+  }
+  .mainbutton-container-1 button:hover {
+    -webkit-animation: ani 0.7s steps(22) forwards;
+    animation: ani 0.7s steps(22) forwards;
+  }
+
+/* 濡쒓렇�씤�썑 寃��깋 */
+
+.login_after_button-container-1 {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 1px;
+}
+.login_after_button-container-1 button {
+  letter-spacing: 1px;
+  background: linear-gradient(rgba(40, 152, 226, 0.3), rgba(238, 48, 48, 0.2));
+  width: 6%;
+  height: 2.8rem;
+  border: 1px solid;
+  border-radius: 8px;
+  /* background-image: url("/泥섏쓬遺��꽣/images/諛붾엺�쓽�굹�씪諛곌꼍.jpg"); */
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  border: none;
+  color: rgba(24, 91, 167, 0.8);
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(22) forwards;
+  animation: ani2 0.7s steps(22) forwards;
+}
+.login_after_button-container-1 button:hover {
+  -webkit-animation: ani 0.7s steps(22) forwards;
+  animation: ani 0.7s steps(22) forwards;
+}
+
+  @-webkit-keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
+  @keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
+  @-webkit-keyframes ani2 {
+    from {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+    to {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+  }
+  @keyframes ani2 {
+    from {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+    to {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+  }
+
+  /* 鍮꾩��뿞�씠誘몄�  */
+  .bgimg {
+    position: fixed;
+    left: 1%;
+    bottom: 10px;
+    display: 6;
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+  }
+  #ming3{
+    width: 70px;
+    height: 30px;
+    border: 0;
+    outline: 0;
+}
+
+
+/* 濡쒓렇�씤 , �쉶�썝媛��엯 , �븘�씠�뵒諛뤿퉬諛�踰덊샇李얘린 */
+
+.login_button-container-3 {
+  width: 18rem;
+  height: 2.5rem;
+  margin-top: 3rem;
+  border: 1px solid #000;
+  font-weight: 10rem;
+  transition: 0.5s;
+  overflow: hidden;
+  letter-spacing: 1px;
+  border-radius: 70rem;
+}
+.login_button-container-3 button {
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 0.73em;
+  letter-spacing: 5px;
+  font-weight: bold;
+  background: #000;
+  -webkit-mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+  mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+  -webkit-mask-size: 7100% 100%;
+  mask-size: 7100% 100%;
+  border: none;
+  outline : none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(70) forwards;
+  animation: ani2 0.7s steps(70) forwards;
+}
+.login_button-container-3 button:hover {
+  -webkit-animation: ani 0.7s steps(70) forwards;
+  animation: ani 0.7s steps(70) forwards;
+}
+
+.new_join_idpwfind_button-container-3 {
+  width: 18rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  border: 1px solid #000;
+  font-weight: 10rem;
+  transition: 0.5s;
+  overflow: hidden;
+  letter-spacing: 1px;
+  border-radius: 70rem;
+}
+.new_join_idpwfind_button-container-3 button {
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 0.72em;
+  letter-spacing: 5px;
+  font-weight: bold;
+  background: #000;
+  -webkit-mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+  mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+  -webkit-mask-size: 7100% 100%;
+  mask-size: 7100% 100%;
+  border: none;
+  outline : none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(70) forwards;
+  animation: ani2 0.7s steps(70) forwards;
+}
+.new_join_idpwfind_button-container-3 button:hover {
+  -webkit-animation: ani 0.7s steps(70) forwards;
+  animation: ani 0.7s steps(70) forwards;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+/* �쉶�썝媛��엯 �솕硫� */
+
+.new_join_ming1 input{
+  height: 20px;
+  width: 200px;
+  padding-top : 7px;
+  padding-bottom: 7px;
+  border : 2px solid #1b1b1b;
+  border-radius: 26px;
+  text-align : center;
+  outline: none;
+}
+#new_join_ming1_5{
+  height: 38px;
+  width: 200px;
+  padding-top : 7px;
+  padding-bottom: 7px;
+  border : 2px solid #1b1b1b;
+  border-radius: 26px;
+  text-align : center;
+  outline: none;
+  text-align-last : center;
+}
+#new_join_ming2{
+  height: 20px;
+  width: 150px;
+  padding-top : 7px;
+  padding-bottom: 7px;
+  border : 2px solid #1b1b1b;
+  border-radius: 26px;
+  text-align : center;
+  outline: none;
+}
+#new_join_ming2_5{
+  height: 38px;
+  width: 150px;
+  padding-top : 7px;
+  padding-bottom: 7px;
+  border : 2px solid #1b1b1b;
+  border-radius: 26px;
+  text-align : center;
+  outline: none;
+  text-align-last : center;
+}
+#new_join_ming2_7{
+  height: 20px;
+  width: 150px;
+  padding-top : 7px;
+  padding-bottom: 7px;
+  border : 2px solid #1b1b1b;
+  border-radius: 26px;
+  text-align : center;
+  outline: none;
+  text-align-last : center;
+}
+
+#new_join_ming3{
+  height: 20px;
+  width: 350px;
+  padding-top : 7px;
+  padding-bottom: 7px;
+  border : 2px solid #1b1b1b;
+  border-radius: 26px;
+  text-align : center;
+  outline: none;
+}
+
+#new_join_ming3_5{
+  height: 20px;
+  width: 400px;
+  padding-top : 7px;
+  padding-bottom: 7px;
+  border : 2px solid #1b1b1b;
+  border-radius: 26px;
+  text-align : center;
+  outline: none;
+}
+/* 濡쒓렇�씤 �썑 */
+
+#login_after_ming01{
+  height: 43px;
+  width: 400px;
+  border : 2px solid #5778F3;
+  background-color: #ffffff;
+  margin-bottom: 3px;
+  
+}#login_after_ming01:focus {outline:none;}
+#login_after_ming1{
+  width: 60px;
+  height: 50px;
+  border: 2px solid #5778F3;
+  outline: none;
+  background-color: #ffffff;
+  color: #5778f3;
+  font-weight: bold;
+  margin-left: 2px;
+}
+#login_after_foott{
+  background-color: white;
+  color: #5778f3;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: right;
+  font-family: Pacifico, serif;
+}
+/* ----- */
+#login_after_ming22{
+  line-height: 30px;
+  border : 1px hidden #5778F3;
+  background-color : #ffffff;
+  color : #5778F3;
+  width: 90px;
+  height: 29px;
+  font-size: small;
+  float: right;
+  font-weight: bold;
+  text-decoration: none;
+}
+#login_after_ming22 {
+position: relative;
+}
+
+#login_after_ming22::after {
+content: "";
+position: absolute;
+left: 50%;
+bottom: -3px;
+width: 60%;
+height: 1px;
+opacity: 0;
+background-color: #5778F3;
+transform: translate(-50%, 0);
+transition: all 0.3s ease-in-out;
+}
+
+#login_after_ming22:hover::after {
+width: 100%;
+opacity: 1;
+}#login_after_ming22:focus {outline:none;}
+
+#login_after_mingreset{
+  border : none;
+  background-color : #ffffff;
+  font-size : 35px;
+  outline: none;
+}
+
+#login_after_mingreset{
+color: #5778F3;
+padding: 2 20px;
+text-align: center;
+line-height: 70px;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+font-family: Pacifico, serif;}
+#login_after_mingreset::before,
+#login_after_mingreset::after {
+position: absolute;
+content: '';
+left: 0;
+height: 2px;
+width: 100%;
+background-color: #5778F3;
+transition: transform 0.3s ease-in-out;
+border : none;
+}
+
+#login_after_mingreset::before {
+top: 0;
+transform: translateX(-100%);
+}
+
+#login_after_mingreset::after {
+bottom: 0;
+transform: translateX(100%);
+}
+
+#login_after_mingreset:hover::after,
+#login_after_mingreset:hover::before {
+transform: translateX(0);
+}
+
+/* .inpoediter_a_name{
+  
+} */
+
+/* �쁽�옱�떆媛� */
+
+.now_clock{
+  display: 2;
+  color : #1b1b1b;
+  position: fixed;
+  left: 6%;
+  bottom: 0.1rem;
+  width: 15rem;
+  height: 2rem;
+  font-size : 0.9rem;
+}
+
+.after_now_clock{
+  display: 2;
+  color : #5778F3;
+  position: fixed;
+  left: 6%;
+  bottom: 0.1rem;
+  width: 15rem;
+  height: 2rem;
+  font-size : 0.9rem;
+}
+
+
+/* 寃��깋李� �뀒�뒪�듃 */
+
+.container-2{
+  width: 500px;
+  white-space: nowrap;
+  position: relative;
+  margin-top: -3rem;
+  padding-bottom: 5.7rem;
+}
+.container-2 input#search{
+  width: 11rem;
+  height: 3rem;
+  background: #1b1b1b;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #262626;
+  padding-left: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+ 
+  -webkit-transition: width .55s ease;
+  -moz-transition: width .55s ease;
+  -ms-transition: width .55s ease;
+  -o-transition: width .55s ease;
+  transition: width .55s ease;
+}
+.container-2 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+.container-2 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.container-2 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+.container-2 input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+.container-2 input#search:focus, .container-2 input#search:active{
+  outline:none;
+  width: 500px;
+}
+ 
+.container-2:hover input#search{
+width: 500px;
+}
+ 
+.container-2:hover .icon{
+  color: #93a2ad;
+}

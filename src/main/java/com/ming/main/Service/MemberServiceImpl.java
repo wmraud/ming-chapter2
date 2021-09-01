@@ -19,4 +19,11 @@ public class MemberServiceImpl implements MemberService {
 		
 	}
 	
+	@Override
+	public void cuser(MemberVO vo) throws Exception {
+		
+		dao.cuser(vo);
+		
+	}
+	
 }
