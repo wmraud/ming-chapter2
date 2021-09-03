@@ -1,3 +1,5 @@
+//회원가입 js
+
 $(document).ready(function(){
 			// 취소
 			$(".cencle").on("click", function(){
@@ -24,3 +26,13 @@ $(document).ready(function(){
 			});
 			
 		})
+		
+		
+//로그아웃 js
+
+$(document).ready(function(){
+		$("#logoutBtn").on("click", function(){
+			location.href="logout";
+		})
+		
+	})

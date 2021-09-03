@@ -3,7 +3,8 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="memberMapper">
-	<!-- 게시판 글 작성 -->
+
+	<!-- 회원가입 -->
 	<insert id="cuser">
 	    INSERT INTO MEMBER(   USERID 
 	   					    , USERPASS 
@@ -14,4 +15,15 @@
 	                 	   , #{userName}
 	                 	   , now() )
     </insert>
+    
+    <!-- 로그인 -->
+    <select id="login" resultType="com.ming.main.VO.MemberVO">
+		SELECT USERID, USERPASS 
+		  FROM MEMBER
+		 WHERE USERID = #{userId}
+		 AND USERPASS = #{userPass}
+	</select>
+    
+    
+    
 </mapper>

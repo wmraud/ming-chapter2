@@ -12,7 +12,7 @@
 
             <div class = "now_clock"><span id="clock"></span></div></nav>
         <div>
-            <button id = 'mainming22' type="button" onclick="location.href='login'">로그인</button>
+            <button id = 'mainming22' type="button" onclick="location.href='home_login'">로그인</button>
             </div><br><br>
              <center> <button id = 'mainmingreset' onclick="location.href='/'">Knowing nothing, ming2 of Story Storage</button> </center>
         <br>
@@ -75,7 +75,7 @@
      
     <script src="/resources/assets/js/jquery.min.js"></script>
     <script src="/resources/assets/js/main.js"></script>
-    <script src="/resources/assets/js/cuser.js"></script>
+    <script src="/resources/assets/js/member.js"></script>
 
     </body>
 </html>

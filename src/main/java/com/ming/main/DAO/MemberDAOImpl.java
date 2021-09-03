@@ -22,4 +22,12 @@ public class MemberDAOImpl implements MemberDAO {
 	public void cuser(MemberVO vo) throws Exception {
 		sql.insert("memberMapper.cuser", vo);
 	}
+	
+	// ·Î±×ÀÎ
+	@Override
+	public MemberVO login(MemberVO vo) throws Exception {
+		return sql.selectOne("memberMapper.login", vo);
+	}
+	
+	
 }
